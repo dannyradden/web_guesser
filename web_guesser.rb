@@ -80,6 +80,5 @@ get '/' do
   cheat = params["cheat"]
 
   erb :index, :locals => { :color => wg.find_color(guess),
-                           :message => wg.find_message(guess, cheat)
-                          }
+                           :message => wg.find_message(guess, cheat) }
 end
